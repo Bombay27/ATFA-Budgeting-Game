@@ -1,0 +1,111 @@
+@import "./reset.css";
+@import "../fonts/caviar-dreams/stylesheet.css";
+@import "./typography.css";
+@import "./general-layout.css";
+
+#root {
+  position: relative;
+}
+
+.centered-image {
+  margin: 0 auto;
+  display: block;
+  max-width: 400px;
+  width: 100%;
+}
+
+.outro {
+  text-decoration: underline;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.guess {
+  font-size: 5rem;
+}
+
+.submit {
+  text-transform: uppercase;
+}
+
+.slider {
+  text-align: left;
+}
+
+.slider-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+@media (min-width: 750px) {
+  .slider-container {
+    width: 100%;
+  }
+}
+
+.slider__labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.65rem;
+}
+
+.slider__label-min {
+  text-align: left;
+}
+
+.slider__label-max {
+  text-align: right;
+}
+
+.slider__draggable-image {
+  height: 100px;
+  user-select: none;
+  cursor: move;
+  vertical-align: top;
+  transform: translateX(-50%);
+}
+
+.orange {
+  color: #f57e25;
+}
+
+.green {
+  color: #30f11a;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 4px solid white;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.button-link:hover {
+  background-color: white;
+  color: #f57e25;
+}
+
+.results__currency-text {
+  margin-top: 1rem;
+  font-size: 5rem;
+  color: #30f11a;
+}
+
+.restart {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: white;
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  padding: 0.25rem 0.5rem;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.restart:hover {
+  background: white;
+  color: black;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}

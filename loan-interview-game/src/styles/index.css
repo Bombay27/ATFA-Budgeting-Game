@@ -1,0 +1,21 @@
+@import "./reset.css";
+@import "../../node_modules/raleway-webfont/raleway.css";
+@import "./typography.css";
+@import "./general-layout.css";
+@import "./interview.css";
+@import "./scrollbar.css";
+@import "./grid.css";
+@import "./button-link.css";
+@import "./modal.css";
+@import "./notebook.css";
+@import "./button-image.css";
+@import "./page-transitions.css";
+@import "./decision-page.css";
+
+#root {
+  position: relative;
+}
+
+.text-center {
+  text-align: center;
+}

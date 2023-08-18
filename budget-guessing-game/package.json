@@ -1,0 +1,38 @@
+{
+  "name": "budget-guessing",
+  "config": {
+    "ftp_dest": "/usr/home/convergence/public_html/convergencedesignlab.org/web-resources/lrng"
+  },
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cross-env": "^5.1.3",
+    "cross-var": "^1.1.0",
+    "gh-pages": "^1.1.0",
+    "gsap": "^1.20.3",
+    "numeral": "^2.0.6",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-draggable": "^3.0.5",
+    "react-ga": "^2.4.1",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-transition-group": "^2.2.1"
+  },
+  "prettier": {
+    "printWidth": 100
+  },
+  "homepage": ".",
+  "scripts": {
+    "start": "cross-env REACT_APP_ENV=development react-scripts start",
+    "start:prod": "cross-env REACT_APP_ENV=production react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run \"build\"",
+    "deploy:ftp": "cross-var node ../deploy.js --src ./build/** --dest $npm_package_config_ftp_dest/$npm_package_name",
+    "deploy:gh-pages": "cross-var gh-pages --dist ./build --dest $npm_package_name --add",
+    "deploy": "npm run \"deploy:gh-pages\" && npm run \"deploy:ftp\""
+  }
+}

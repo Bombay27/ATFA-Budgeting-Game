@@ -1,0 +1,10 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-3 {
+  flex: 0 0 33.333333%;
+  max-width: 100%;
+}
