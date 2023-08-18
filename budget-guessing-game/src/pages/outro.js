@@ -10,9 +10,6 @@ export default function Outro() {
         <FadeInSequence defaultDuration={1} defaultDelay={0.5}>
           <div className="section">
             <SequenceElement delay={0}>
-              <img className="centered-image" src={celebrate} alt="" />
-            </SequenceElement>
-            <SequenceElement delay={0}>
               <p>Nice estimating!</p>
             </SequenceElement>
           </div>
