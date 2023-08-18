@@ -25,7 +25,7 @@ export default class Intro1 extends Component {
                 <p>Simply put, the key is:</p>
               </SequenceElement>
               <SequenceElement>
-                <img className="centered-image" src={balance} alt="balance" />
+                <p>Balance!</p>
               </SequenceElement>
             </div>
             <SequenceElement>
